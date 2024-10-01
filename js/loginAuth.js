@@ -13,9 +13,9 @@ const passwordInputs = document.querySelectorAll('.password');
 const nameInput = document.getElementById('name');
 
 window.onload = () => {
-    if (getLoginValidty === "false" && window.location.pathname !== "/auth.html") {
-        window.location.href = './auth.html';
-    } else if (getLoginValidty === "true" && window.location.pathname !== "/") {
+    if (getLoginValidty === "false" && window.location.pathname !== "https://stackmastery.github.io/metubeadfreevideowatch/auth.html/") {
+        window.location.href = 'https://stackmastery.github.io/metubeadfreevideowatch/auth.html';
+    } else if (getLoginValidty === "true" && window.location.pathname !== "https://stackmastery.github.io/metubeadfreevideowatch/") {
         window.location.href = './';
     }
 
