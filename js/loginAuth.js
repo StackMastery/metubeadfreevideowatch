@@ -14,9 +14,9 @@ const nameInput = document.getElementById('name');
 
 window.onload = () => {
     if (getLoginValidty === "false" && window.location.pathname !== "/auth.html") {
-        window.location.href = '/auth.html';
+        window.location.href = './auth.html';
     } else if (getLoginValidty === "true" && window.location.pathname !== "/") {
-        window.location.href = '/';
+        window.location.href = './';
     }
 
     setTimeout(() => {
@@ -47,7 +47,7 @@ signinForm.addEventListener("submit", function(event) {
 
 const signSucces = () => {
     localStorage.setItem("Logged", "true");
-    window.location.href = '/';
+    window.location.href = './';
 };
 
 signupForm.addEventListener("submit", function(event) {
@@ -67,5 +67,5 @@ signupForm.addEventListener("submit", function(event) {
     signupForm.reset();
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
-    window.location.href = '/auth.html'
+    window.location.href = './auth.html'
 });
